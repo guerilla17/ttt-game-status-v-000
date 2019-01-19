@@ -1,7 +1,14 @@
+<<<<<<< HEAD
     require "pry"
     
       board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 # Helper Method
+=======
+      board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+#1
+
+Helper Method
+>>>>>>> 764c94a2751c11d9f7ecaef5fdc03208fb999067
 def position_taken?(board, index)
   !(board[index].nil? || board[index] == " ")
 end
@@ -31,18 +38,29 @@ end
 def full?(board)
   board.all? do |index|
  index == "X" || index == "O"
+<<<<<<< HEAD
  end 
  end
 
 
 def draw?(board)
  full?(board) && !won?(board)
+=======
+end
+ end 
+
+
+def draw?(board)
+ if full?(board) && !won?(board)
+end
+>>>>>>> 764c94a2751c11d9f7ecaef5fdc03208fb999067
 end
 
 def over?(board)
   won?(board) || draw?(board) || full?(board)
 end
 
+<<<<<<< HEAD
 def winner(board)
   if won?(board)
   
@@ -50,6 +68,9 @@ def winner(board)
 
 end
 end
+=======
+
+>>>>>>> 764c94a2751c11d9f7ecaef5fdc03208fb999067
  
 
 
